@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITY PLANNER ID</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  function validateForm() {
+    const nameInput = document.getElementById('name-input');
+    if (!nameInput) {
+      alert("Input field not found!");
+      return;
+    }
+
+    if (nameInput.value === '') {
+      alert('Form cannot be empty!');
+    } else {
+      const result = document.getElementById('result-form');
+      if (result) {
+        result.textContent = `Hello, ${nameInput.value}! Your message has been sent.`;
+      }
+    }
+  }
+</script>
+<body>
+
+    <!-- Header Content -->
+    <header class="main-header p-[15px]">
+        <!-- Logo Icon -->
+        <div class="logo rounded-[40%] h-[20px] w-[50px]"></div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex justify-center">
+  <a class="rounded-md px-4 py-2 bg-white border border-gray-300 shadow-sm hover:bg-blue-200 transition" href="#home">Home</a>
+  <a class="rounded-md px-4 py-2 bg-white border border-gray-300 shadow-sm hover:bg-blue-200 transition" href="#Profil">Profil Kami</a>
+  <a class="rounded-md px-4 py-2 bg-white border border-gray-300 shadow-sm hover:bg-blue-200 transition" href="#portfolio">Portfolio</a>
+  <a class="rounded-md px-4 py-2 bg-white border border-gray-300 shadow-sm hover:bg-blue-200 transition" href="#message-us">Hubungi Kami</a>
+</nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section class="p-[10px] min-h-[250px]" id="home">
+            <div class="p-4 text-center">
+            <h1 class="text-[24px] font-bold">Selamat Datang di Website resmi CITIES PLANNER ID</h1>
+            <p class="text-[18px]">Perencana Tata Ruang dan Letak Kota Terpercaya.</p>
+            </div>
+
+            <div class="h-[50px] banner-img"></div>
+            <img src="images/Screenshot 2025-08-01 192058.png" class="mx-auto"/>
+
+        </section>
+        <section class="w-full h-screen flex items-start justify-start p-8 bg-cyan-300">
+  <p class="max-w-md text-gray-800 text-[55px]">
+    Cities Planner ID adalah sebuah perusahaan pembuatan perencanaan tata letak infrastruktur Kota.</p>
+            </div>   
+        </section>
+
+        <hr/>
+
+        <!-- Our Profile Section -->
+        <section class="p-[20px] min-h-[250px]" id="Profil">
+            <div class="p-4 text-center">
+            <h1 class="text-[24px] font-bold">Profile Kami</h1>
+            <p class="text-[16px]">Personel Tim Kami dan Peran Masing-masing:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Worker 1 -->
+    <div class="flex items-center space-x-4 p-4 border rounded-lg shadow-md">
+      <img src="Images\Worker 1.webp" alt="Willy Kambwala" class="w-[80px] h-[80px] rounded-full object-cover" />
+      <div>
+        <h3 class="text-[18px] font-semibold">Willy Kambwala</h3>
+        <p class="text-[14px] text-gray-600">Assets Manager</p>
+        <p class="text-[14px] text-gray-600">Will.Y@gmail.com | +62 8456 2992 321</p>
+      </div>
+    </div>
+
+    <!-- Worker 2 -->
+    <div class="flex items-center space-x-4 p-4 border rounded-lg shadow-md">
+      <img src="Images/Rocky Balboa.webp" alt="Rocky Balboa" class="w-[80px] h-[80px] rounded-full object-cover" />
+      <div>
+        <h3 class="text-[18px] font-semibold">Rocky Balboa</h3>
+        <p class="text-[14px] text-gray-600">Assets Artist</p>
+        <p class="text-[14px] text-gray-600">Rocky.me@gmail.com | +62 8321 9870 456</p>
+      </div>
+    </div>
+
+    <!-- Worker 3 -->
+    <div class="flex items-center space-x-4 p-4 border rounded-lg shadow-md">
+      <img src="Images/Worker 3.webp" alt="Peter Crouch" class="w-[80px] h-[80px] rounded-full object-cover" />
+      <div>
+        <h3 class="text-[18px] font-semibold">Peter Crouch</h3>
+        <p class="text-[14px] text-gray-600">Project Marketing</p>
+        <p class="text-[14px] text-gray-600">PeterC@gmail.com | +62 8123 0456 798</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr/>
+
+
+        </section>
+
+        <hr />
+
+        <!-- Portfolio Section -->
+        <section class="p-[16px] min-h-[500px] p-4 text-center" id="portfolio">
+            <h1 class="text-[24px] font-bold">Portfolio</h1>
+            <p class="text-[16px]">Lihat hasil pekerjaan kami dengan client terdahulu:</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+  <!-- Project Card -->
+  
+
+ <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
+
+    <!-- Project Card 1 -->
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3526049407" target="_blank"
+   class="block w-full max-w-4xl mx-auto border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+  
+  <img src="images/JATINGALEH.png" alt="Jatingaleh Highway Entrance/Exit Replica"
+       class="w-full h-[300px] object-cover" />
+  
+  <div class="p-6 text-center">
+    <h3 class="text-[24px] font-semibold text-blue-700 hover:underline">
+      Replika Entrance/Exit Jalan Tol Jatingaleh
+    </h3>
+    <p class="text-[16px] text-gray-600 mt-2">
+      Replika Gerbang Tol Jatingaleh yang dapat digunakan di Game Cities Skylines
+    </p>
+  </div>
+</a>
+
+
+      </div>
+    </div>
+
+        </section>
+
+        <hr />
+
+        <!-- Message Us Section -->
+        <section class="text-center [16px] min-h-[500px]" id="message-us">
+            <h1 class="text-[24px] font-bold">Kontak Customer Service</h1>
+            <p class="text-[16px]">Jika ada pesan atau pertanyaan, silahkan isi dengan form</p>
+
+            <div class="flex">
+                <form class="flex-1">
+                    <div>
+                        <label for="name-input">Name:</label>
+                        <input class="border rounded-[4px] px-[8px] py-[4px]" type="text" id="name-input" name="name">
+                    </div>
+
+                    <button class="border rounded-[4px] px-[8px] py-[4px]" type="button" onclick="validateForm();">Send
+                        Message</button>
+                </form>
+
+                <aside class="min-h-[100px] flex-1 rounded-[4px] bg-blue-200">
+                    <p id="result-form"></p>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+
+    <hr />
+
+    <!-- Footer Content -->
+    <footer class="text-center p-[20px] bg-gray-200">
+        <p>&copy; 2025 Ahza Rais Arya Triswardhana. All rights reserved.</p>
+    </footer>
+
+    <!-- Javascript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

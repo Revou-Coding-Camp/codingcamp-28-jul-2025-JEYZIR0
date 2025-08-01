@@ -1,0 +1,26 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-img {
+    background-image: url(https://picsum.photos/800);
+    background-size: cover;
+    background-position: center;
+}
+
+aside {
+    align-content: center;
+    justify-items: center;
+}
